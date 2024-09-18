@@ -9,11 +9,13 @@ export default {
 </script>
 
 <template>
-<h1>HEADER</h1>
+<div class="headerContainer">
+  <h1>Yu-Gi-Oh Api</h1>
+</div>
 </template>
 
 <style lang="scss" scoped>
-h1{
-    color: black;
+.headerContainer {
+  min-height: 50px;
 }
 </style>
