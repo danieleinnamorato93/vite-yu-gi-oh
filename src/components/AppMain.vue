@@ -14,9 +14,14 @@ export default {
 </script>
 
 <template>
-<h1>Main</h1>
-<AppMainCardsList/>
+<main>
+  <AppMainCardsList/>
+</main>
+
 </template>
 
 <style lang="scss" scoped>
+main{
+  background-color: white;
+}
 </style>

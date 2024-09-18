@@ -15,10 +15,10 @@ export default {
       axios.get(this.apiUrl)
       .then((response) => {
         this.monstersList = response.data.data;
-        console.log(this.monstersList);
+        console.dir(this.monstersList);
       })
-      .catch((error) {
-        console.log (error);
+      .catch(function (error) {
+        console.log(error);
       });
     
     }
@@ -33,11 +33,20 @@ export default {
 </script>
 
 <template>
+  <div class="deckContainer">
 
-    <AppMainCardsItem/>
-  
+ 
+    <AppMainCardsItem v-for="monsterItem in monstersList" :key="monsterItem.id"
+    :monsterObject="monsterItem"
+    />
+  </div>
 
 </template>
 
 <style scoped>
+.deckContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 </style>
