@@ -27,9 +27,7 @@ export default {
 .cardContainer{
   background-color: orange;
   border: 1px black;
-
-  min-height:250px;
-  max-width: 150px;
+  max-width: 160px;
   padding: 10px;
   margin: 10px;
   color: white;
