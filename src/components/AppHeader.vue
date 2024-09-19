@@ -14,9 +14,10 @@ export default {
 <div class="headerContainer">
   <h1>Yu-Gi-Oh Api</h1>
   <div class="selectArchetype">
-    <select id="archetipo-select">
+    <select v-model="selectedArchetype" @change="getCardsByArchetype">
        <option value="" disabled selected>Seleziona un archetipo</option>
-       <option value=""></option>
+       <option v-for="archetype in archetypes" :key="archetype.archetype_name" :value="archetype.archetype_name">
+        {{ archetype.archetype_name }}</option>
         </select>
   </div>
   <div class="monsterNumberContainer">
