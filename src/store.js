@@ -3,5 +3,7 @@ import { reactive } from "vue";
     searchText:'',
     loaded:true,
 monstersList : [],
+archetypes : [],
+selectedArchetype:''
 });
 export default store;
