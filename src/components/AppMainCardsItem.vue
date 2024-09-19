@@ -18,7 +18,7 @@ export default {
   <div class="cardContainer">
     <img :src="monsterObject.card_images[0].image_url" :alt="monsterObject.name">
   <h3>{{ monsterObject.name }}</h3>
-  <h4>{{ monsterObject.archetype }}</h4>
+  <h4>{{ monsterObject.race }}</h4>
   </div>
   
 </template>
